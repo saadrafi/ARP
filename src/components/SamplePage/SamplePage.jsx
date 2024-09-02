@@ -173,7 +173,7 @@ const SamplePage = () => {
             </button>
           </form>
           <p className="py-4 hidden lg:inline">Press ESC key or click the button below to close</p>
-          <p>
+          <p className="text-center">
             <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-link btn-sm">
               Click here to open in new tab
             </a>
