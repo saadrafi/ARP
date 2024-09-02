@@ -1,6 +1,6 @@
 import React from "react";
 import SingleTopic from "./SingleTopic";
-import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 const Topics = () => {
   return (
@@ -12,7 +12,7 @@ const Topics = () => {
         </p>
       </div>
 
-      <Fade cascade delay={500} duration={800}>
+      <Slide cascade delay={200} duration={800} direction="right">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 my-6 w-[90%] lg:w-full mx-auto">
           <SingleTopic>Accounting</SingleTopic>
 
@@ -57,7 +57,7 @@ const Topics = () => {
           <SingleTopic>Astronomy</SingleTopic>
           <SingleTopic>Geology</SingleTopic>
         </div>
-      </Fade>
+      </Slide>
     </div>
   );
 };

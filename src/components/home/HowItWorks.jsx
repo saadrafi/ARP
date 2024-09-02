@@ -4,7 +4,7 @@ import { BiSolidMessageAltDetail } from "react-icons/bi";
 import { MdPayments } from "react-icons/md";
 import { GiDiscussion } from "react-icons/gi";
 import { AiOutlineSolution } from "react-icons/ai";
-import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const steps = [
   {
@@ -36,7 +36,7 @@ const HowItWorks = () => {
         <h1 className="text-4xl text-center font-bold divider divider-primary">How It Works</h1>
         <p className="text-center text-gray-700 p-4">Our process is simple and straightforward.</p>
       </div>
-      <Slide cascade delay={200} duration={800} direction="right">
+      <Fade cascade delay={200} duration={800} >
         <div className="flex flex-col lg:flex-row items-center gap-4 my-6 w-[90%] lg:w-full mx-auto">
           <div className="card flex-1">
             <div className="card-body items-center text-center">
@@ -78,7 +78,7 @@ const HowItWorks = () => {
             </div>
           </div>
         </div>
-      </Slide>
+      </Fade>
     </div>
   );
 };
