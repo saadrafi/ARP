@@ -4,8 +4,10 @@ import OurCommitment from "./OurCommitment";
 import OurExpertise from "./OurExpertise";
 import OurValues from "./OurValues";
 import WhyChooseUs from "./WhyChooseUs";
+import setTitle from "../utils/SetTitle";
 
 const AboutUs = () => {
+  setTitle("About Us");
   return (
     <div className=" min-h-screen">
       {/* Hero Section */}

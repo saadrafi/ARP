@@ -6,6 +6,7 @@ import PdfViewer from "../utils/PdfViewer";
 import HowItWorks from "./HowItWorks";
 import FAQ from "./FAQ";
 import SampleCarousel from "./sample/SampleCarousel";
+import setTitle from "../utils/SetTitle";
 
 const Home = () => {
   const [url, setUrl] = useState("");
@@ -13,6 +14,8 @@ const Home = () => {
     setUrl(url);
     document.getElementById("my_modal_5").showModal();
   };
+
+  setTitle("Home");
 
   return (
     <div>

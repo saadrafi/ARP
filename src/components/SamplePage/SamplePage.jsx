@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SingleSampleCard from "../home/sample/SingleSampleCard";
 import PdfViewer from "../utils/PdfViewer";
+import setTitle from "../utils/SetTitle";
 
 const SamplePage = () => {
   const [samples, setSamples] = useState([]);
@@ -15,6 +16,8 @@ const SamplePage = () => {
     setUrl(url);
     document.getElementById("my_modal_1").showModal();
   };
+
+  setTitle("Sample");
 
   useEffect(() => {
     fetch("data.json")

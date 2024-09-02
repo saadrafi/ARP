@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import ContactUs from "../utils/ContactUs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,9 +35,7 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <button className="btn btn-primary">
-            Contact Us
-        </button>
+        <ContactUs />
       </li>
     </>
   );
@@ -86,7 +85,6 @@ const Navbar = () => {
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal menu-lg px-1 text-2xl">{navItems}</ul>
           </div>
-          
         </div>
       </div>
     </div>

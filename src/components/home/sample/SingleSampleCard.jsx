@@ -46,7 +46,7 @@ const SingleSampleCard = ({ sample, openPdfModal }) => {
             {/* facebook icon */}
             <a
               href="
-            https: //www.facebook.com/academicresearchpoint"
+            https://www.facebook.com/academicresearchpoint"
               target="_blank"
               rel="noreferrer"
               className="link link-hover hover:text-primary text-4xl"
