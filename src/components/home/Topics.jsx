@@ -12,7 +12,7 @@ const Topics = () => {
         </p>
       </div>
 
-      <Fade cascade delay={500} duration={1500}>
+      <Fade cascade delay={500} duration={1000}>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 my-6 w-[90%] lg:w-full mx-auto">
           <SingleTopic>Accounting</SingleTopic>
 

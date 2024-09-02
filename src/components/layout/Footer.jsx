@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <footer className="footer p-10 bg-base-200 text-base-content">
         <aside>
-          <img src="/public/logo.jpg" alt="logo" className="w-40 h-24" />
+          <img src="logo.jpg" alt="logo" className="w-40 h-24" />
           <p>
             <span className="text-lg">Academic Research Point</span>
             <br />
@@ -48,7 +48,7 @@ const Footer = () => {
             </a>
             {/* whatsapp icon */}
             <a
-              href="https://wa.me/+8801771712884"
+              href="https://wa.me/+8801718409797"
               target="_blank"
               rel="noreferrer"
               className="link link-hover hover:text-green-700 text-4xl"

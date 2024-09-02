@@ -36,7 +36,7 @@ const HowItWorks = () => {
         <h1 className="text-4xl text-center font-bold divider divider-primary">How It Works</h1>
         <p className="text-center text-gray-700 p-4">Our process is simple and straightforward.</p>
       </div>
-      <Slide cascade delay={500} duration={2000} direction="right">
+      <Slide cascade delay={200} duration={1000} direction="right">
         <div className="flex flex-col lg:flex-row items-center gap-4 my-6 w-[90%] lg:w-full mx-auto">
           <div className="card flex-1">
             <div className="card-body items-center text-center">

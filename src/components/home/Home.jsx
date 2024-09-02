@@ -14,6 +14,10 @@ const Home = () => {
     setUrl(url);
     document.getElementById("my_modal_5").showModal();
   };
+  const closeModal = () => {
+    document.getElementById("my_modal_5").close();
+    setUrl("");
+  };
 
   setTitle("Home");
 
@@ -29,8 +33,8 @@ const Home = () => {
       <dialog id="my_modal_5" className="modal">
         <div className="modal-box w-11/12">
           <form method="dialog">
-            {/* if there is a button in form, it will close the modal */}
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+           
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onClick={closeModal}>✕</button>
           </form>
           <p className="py-4 hidden lg:inline">Press ESC key or click the button below to close</p>
           <p>
@@ -46,7 +50,7 @@ const Home = () => {
           <div className="modal-action">
             <form method="dialog">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn">Close</button>
+              <button className="btn" onClick={closeModal}>Close</button>
             </form>
           </div>
         </div>
