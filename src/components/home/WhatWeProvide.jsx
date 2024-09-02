@@ -16,7 +16,7 @@ const WhatWeProvide = () => {
         </p>
       </div>
 
-      <Slide cascade delay={200} duration={1000}>
+      <Slide cascade delay={200} duration={800}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-6 w-[90%] lg:w-full mx-auto">
           <div className="card shadow-md hover:shadow-2xl transition-shadow ease-linear delay-50">
             <div className="card-body">
