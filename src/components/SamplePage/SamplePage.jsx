@@ -76,20 +76,22 @@ const SamplePage = () => {
 
   return (
     <div>
-      <div className="hero min-h-[50vh] bg-primary text-white flex flex-col justify-center items-center rounded-b">
-        <h1 className="text-5xl font-bold">Sample</h1>
-        <p className="text-lg mt-4 max-w-2xl text-center">
-          Check out the samples of the writing assignments performed by Academic Research Point
-          experts.
-        </p>
+      <div
+        className="hero min-h-[50vh] bg-cover bg-center bg-no-repeat text-white flex flex-col justify-center items-center rounded-b relative"
+        style={{ backgroundImage: `url('/samplebanner.jpg')` }} // Replace with the actual image path
+      >
+        {/* Adding a dark overlay to improve text readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
+        <div className="relative z-10 flex flex-col items-center">
+          <h1 className="text-5xl font-bold drop-shadow-lg">Sample</h1>
+          <p className="text-lg mt-4 max-w-2xl text-center drop-shadow-lg p-4">
+            Check out the samples of the writing assignments performed by Academic Research Point
+            experts.
+          </p>
+        </div>
       </div>
-      {/* <div className=" bg-gradient-to-b from-[#47AFEE] to-[#47AFEE]/[0.6] h-48 w-full flex flex-col justify-center items-center rounded-b my-4">
-        <h1 className="text-4xl font-bold text-center text-white">Sample</h1>
-        <p className="p-4 my-3 text-lg text-gray-100 text-center">
-          Check out the samples of the writing assignments performed by Academic Research Point
-          experts.
-        </p>
-      </div> */}
+
       <div className="flex justify-around items-center my-12 gap-3">
         <label className="input input-bordered flex items-center gap-2 w-full max-w-xl">
           <input

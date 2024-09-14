@@ -7,6 +7,7 @@ import HowItWorks from "./HowItWorks";
 import FAQ from "./FAQ";
 import SampleCarousel from "./sample/SampleCarousel";
 import setTitle from "../utils/SetTitle";
+import HowToPay from "./HowToPay";
 
 const Home = () => {
   const [url, setUrl] = useState("");
@@ -28,19 +29,29 @@ const Home = () => {
       <WhatWeProvide />
       <Topics />
       <HowItWorks />
+      <HowToPay />
       <FAQ></FAQ>
 
       <dialog id="my_modal_5" className="modal">
         <div className="modal-box max-w-none">
           <form method="dialog">
-           
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onClick={closeModal}>✕</button>
+            <button
+              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              onClick={closeModal}
+            >
+              ✕
+            </button>
           </form>
           <p className="py-4 hidden lg:inline">Press ESC key or click the button below to close</p>
           <p className="text-center">
-            <a href={url} target="_blank" rel="noopener noreferrer" className="
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
             btn btn-link btn-sm
-            ">
+            "
+            >
               Click here to open in new tab
             </a>
           </p>
@@ -50,7 +61,9 @@ const Home = () => {
           <div className="modal-action">
             <form method="dialog">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn" onClick={closeModal}>Close</button>
+              <button className="btn" onClick={closeModal}>
+                Close
+              </button>
             </form>
           </div>
         </div>

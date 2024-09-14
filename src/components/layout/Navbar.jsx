@@ -68,7 +68,7 @@ const Navbar = () => {
             {isOpen && (
               <ul
                 tabIndex={0}
-                className="z-10 menu menu-md dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-56"
+                className="z-20 menu menu-md dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-56"
               >
                 {navItems}
               </ul>

@@ -5,6 +5,7 @@ import {
   FaHourglassHalf,
   FaSyncAlt,
   FaShieldAlt,
+  FaFileAlt, // Importing a new icon for Turnitin check report
 } from "react-icons/fa";
 
 const OurCommitment = () => {
@@ -17,7 +18,7 @@ const OurCommitment = () => {
         <p className="text-gray-700 text-center p-4 leading-relaxed">
           We are committed to providing high-quality academic services that meet your unique needs.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
             <FaCheckCircle className="text-primary text-6xl mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-center">Authenticity Guaranteed</h3>
@@ -48,9 +49,17 @@ const OurCommitment = () => {
           </div>
           <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
             <FaShieldAlt className="text-primary text-6xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2  text-center">Secure Transactions</h3>
+            <h3 className="text-xl font-semibold mb-2 text-center">Secure Transactions</h3>
             <p className="text-center text-gray-700">
               Your payments are processed securely, giving you peace of mind.
+            </p>
+          </div>
+          {/* New Commitment for Turnitin Check Report */}
+          <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
+            <FaFileAlt className="text-primary text-6xl mb-4" />
+            <h3 className="text-xl font-semibold mb-2 text-center">Turnitin Report</h3>
+            <p className="text-center text-gray-700">
+              We provide a Turnitin plagiarism check report to ensure your work's originality.
             </p>
           </div>
         </div>

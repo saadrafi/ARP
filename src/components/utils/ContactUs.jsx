@@ -29,9 +29,10 @@ const showContacts = () => {
   });
 };
 
-const ContactUs = () => {
+const ContactUs = ({children}) => {
   return (
-    <div className="btn btn-primary">
+    <div className="btn btn-primary inline-flex items-center">
+      {children}
       <button onClick={showContacts}>Contact Us</button>
     </div>
   );
